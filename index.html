@@ -13,7 +13,7 @@
     <!-- Bootstrap ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Bootstrap ICONS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">    
     <title>Portifolio | Guilhermo</title>
 </head>
 <body>
@@ -96,7 +96,7 @@
         </div><!-- Interface -->
            </section><!--conhecimentos  -->
   </main>
-          <section class="sobre" id="sobre">
+          <section class="sobre" id="sobre"><!--sobre-->
              <div class="interface">
                 <div class="flex">
 
@@ -118,11 +118,11 @@
                             <div class="rede-social">
                                 <a href="https://github.com/Guilhermouu" target="_blank" ><button><i class="bi bi-github"></i></button> </a>
                                 <a href="https://www.linkedin.com/in/guilhermosantos/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            </div>
-                    </div>               
-                </div>
-             </div>
-          </section>
+                            </div><!--rede social-->
+                    </div>     <!--txt-sobre-->          
+                </div><!--flex-->
+             </div><!--interface-->
+          </section><!--sobre-->
        <section class="portfolio"id="portifolio">
         
         <div class="interface">
@@ -131,27 +131,28 @@
                 
                 <div class="img-port" style="background-image: url(assets/img/PROJETO1.png );">
                     <div class="overlay">Projeto 1</div>
-                </div>
+                </div><!--img port-->
+        </div><!--flex-->
 
-                
-        </div>
        </section><!--portifolio-->   
        <main>
     <section class="formulario">
         <div class="interface">
             <h2 class="titulo">FALE<span> COMIGO.</span></h2>
-            <form class="contact-form">
-                <input type="text" id="nome" name="nome" placeholder="Seu nome completo:" required>
+            <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form"> 
+                <input type="hidden" name="accessKey" value="aaf7ac49-50af-4f0e-9fb1-8f3ff07f6b92">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html"> <!-- Required -->
+                <input type="text" id="name" name="name" placeholder="Seu nome completo:" required>
                 <input type="email" id="email" name="email" placeholder="Seu e-mail:" required>
-                <input type="tel" id="celular" name="celular" placeholder="Seu celular:" required>
-                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <input type="tel" id="phone" name="phone" placeholder="Seu celular:" required>
+                <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
                 <div class="enviar-mensagem">
                     <input type="submit" value="Enviar">
-                </div>
                 <p class="error-message" style="color: red; display: none;">Por favor, preencha todos os campos corretamente.</p>
             </form>
-        </div>
-    </section>
+        </form>
+        </div> <!--interface-->
+    </section>    <!--forumulario-->
 </main>
 
 <footer>
@@ -174,7 +175,7 @@
        
     
     </div>  <!--Interface-->
-</footer>
+</footer><!--footer-->
     <script src="assets/js/script.js"></script>
    
 </body>

@@ -229,7 +229,6 @@ section.conhecimentos .flex{
     transition: .2s;
 }
 
-
 .conhecimentos .conhecimentos-box h3{
   font-size: 35px;
   margin: 10px 0;
@@ -255,7 +254,6 @@ section.conhecimentos .flex{
 .conhecimentos .conhecimentos-box5 h3{
     font-size: 35px;
     margin: 10px 0;
-    
   }
   
 /* ESTILO DO SOBRE MIM */
@@ -322,9 +320,9 @@ section.portfolio .flex{
     background-size: cover;
     transition: 5s;
     position: relative;
-border-radius: 20px;
+    border-radius: 20px;
+    cursor:pointer;
 }
-
 .overlay{
     position: absolute;
     top: 0;
@@ -333,7 +331,6 @@ border-radius: 20px;
     height: 100%;
     background-color: #00000000;
     display: flex;
-    
     align-items: center;
     justify-content:center;
     font-weight: 600;
@@ -424,7 +421,6 @@ footer .line-footer p i{
 }
 footer .line-footer p a{
     color: #fff;
-    
 }
 footer .line-footer .rede-social a{
     text-decoration: none;
